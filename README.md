@@ -18,11 +18,11 @@ By: Harman Zhang, Ryan Le, Nobel Menghis, Trang Tran
 
 ## Architectural Diagram
 
-![Architectural Diagram] (imgs/diagram.png)
+![Architectural Diagram] (https://github.com/trangtran10/Travely/blob/main/imgs/diagram.png)
 
 ## Data Flow
 
-![Architectural Diagram] (imgs/dataFlow.png)
+![Architectural Diagram] (https://github.com/trangtran10/Travely/blob/main/imgs/dataFlow.png)
 
 ## User Stories
 
