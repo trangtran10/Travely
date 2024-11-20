@@ -39,7 +39,7 @@ body {
     font-size: 18px;
 }
 
-.rightNav {
+.login {
     text-align: right;
 }
 
@@ -111,3 +111,23 @@ margin-left: 30px;
     display: flex;
 }
 
+.footer {
+    background-color: #F9F9F9;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer-text {
+    color: black;
+}
+
+.footer-subheading {
+    font-weight: bold;
+}
