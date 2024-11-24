@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>Travely.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <main>
+    <body>
+      <header>
+        <nav class="navbar">
+          <ul class="navlist">
+            <li class="app-name">Travely.</li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+          <div class="login">
+            <button class="btn btn-sm">Login</button>
+          </div>
+        </nav>
+      </header>
+
+      <div>
+        <h1 class="subheading">Discover</h1>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm">
+              <div class="card-2" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="img/nyc.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title-2">New York City</h5>
+                  <p class="card-text-2">by bun</p>
+                  <!-- <button class="heart_button" onclick="">&#x2665;</button> -->
+                  <button class="heart_button" onclick="">&#x2661;</button>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-sm">
+                <div class="card-2" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="img/seattle.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title-2">Seattle</h5>
+                    <p class="card-text-2">by cloud</p>
+                    <!-- <button class="heart_button" onclick="">&#x2665;</button> -->
+                    <button class="heart_button" onclick="">&#x2661;</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm">
+                <div class="card-2" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="img/korea.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title-2">Korea</h5>
+                    <p class="card-text-2">by berry</p>
+                    <!-- <button class="heart_button" onclick="">&#x2665;</button> -->
+                    <button class="heart_button" onclick="">&#x2661;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="subheading">Create your trip</h1>
+          <form>
+            <div class="form-group">
+              <label for="InputDestination">Destination</label>
+              <input
+                type="text"
+                class="form-control"
+                id="InputDestination"
+                placeholder="Enter destination"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="InputAirline">Airline</label>
+              <input
+                type="text"
+                class="form-control"
+                id="InputAirline"
+                placeholder="Airline"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="InputHotel">Hotel</label>
+              <input
+                type="text"
+                class="form-control"
+                id="InputHotel"
+                placeholder="Hotel"
+              />
+            </div>
+
+            <h5 class="form-sub">Highlights</h5>
+
+            <div class="form-group">
+              <label for="InputSummary">Hotel</label>
+              <textarea
+                class="form-control"
+                id="InputSummary"
+                placeholder="Write a summary of your trip..."
+                rows="5"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="mb-3">
+                <label for="formFile" class="form-label"
+                  >Upload a photo memory</label
+                >
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+            </div>
+
+            <div class="submit-button">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <footer class="footer">
+          <h3>Travely.</h3>
+          <p class="footer-subheading">CONTACT</p>
+          <p>
+            <a class="footer-text" href="mailto:@backpack.com">
+              Email: info.@travely.com</a
+            >
+          </p>
+          <p>
+            <a class="footer-text" href="tel:206-123-456">Phone: 206-123-456</a>
+          </p>
+          <p>&copy;Travely.</p>
+        </footer>
+      </div>
+    </body>
+  </main>
+</html>
