@@ -16,7 +16,7 @@ const newItinerary = new mongoose.Schema({
     destination: { type: String, required: true } ,
     airline: { type: String, required: true } ,
     created_date: { type: Date, deafault: Date.now },
-    Summary: { type: String,  default: true },
+    summary: { type: String,  default: true },
     photo: { type: String, required: true}
 })
 

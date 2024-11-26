@@ -8,8 +8,6 @@ async function allPosts() {
     let postsJson = await fetchJSON(`api/apiv3/posts`)
     
 
-
-
     // destination: { type: String, required: true } ,
     // photo: { type: String, required: true}
     let postsHtml = postsJson.map(postInfo => {
@@ -17,7 +15,7 @@ async function allPosts() {
         <div class="post">
             <div class="col-sm">
               <div class="card-2" style="width: 18rem">
-                <a href="" clas="stretched-link">
+                <a href="${postInfo.destination}${postInfo.username}.html" class="stretched-link">
                 <img
                   class="card-img-top"
                   src="img/${photo}"
@@ -39,4 +37,31 @@ async function allPosts() {
 
     postsDiv.innerHTML = postsHtml;
 
+}
+
+
+
+async function addPost(){
+    document.getElementById("postStatus").innerHTML = "sending data..."
+    let destination = document.getElementById("InputDestination").value;
+    let airline = document.getElementById("InputAirline").value;
+    let hotel = document.getElementById("InputHotel").value;
+    let summary = document.getElementById("InputSummary").value;
+
+    
+    try{
+        await fetchJSON(`api/v1/itineraries`, {
+            method: "POST",
+            body: {destination: destination, airline: airline, hotel: hotel, summary: summary}
+        })
+    }catch(error){
+        document.getElementById("postStatus").innerText = "Error"
+        throw(error)
+    }
+    document.getElementById("InputDestination").value = "";
+    document.getElementById("InputAirline").value = "";
+    document.getElementById("InputHotel").value = "";
+    document.getElementById("InputSummary").value = "";
+    allPosts();
+    
 }

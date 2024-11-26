@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src = "javascripts/formHandler.js"></script>
   </head>
   <main>
     <body>
@@ -34,7 +35,7 @@
               <div class="card-2" style="width: 18rem">
                 <a href="" clas="stretched-link">
                 <img
-                  <!-- class="card-img-top" -->
+                  class="card-img-top"
                   src="img/nyc.png"
                   alt="Card image cap"
                 />
@@ -123,7 +124,7 @@
             <h5 class="form-sub">Highlights</h5>
 
             <div class="form-group">
-              <label for="InputSummary">Hotel</label>
+              <label for="InputSummary">Summary</label>
               <textarea
                 class="form-control"
                 id="InputSummary"
@@ -142,10 +143,11 @@
             </div>
 
             <div class="submit-button">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button onclick="addPost()" type="submit" class="btn btn-primary">Submit</button>
             </div>
           </form>
         </div>
+        
 
         <footer class="footer">
           <h3>Travely.</h3>
