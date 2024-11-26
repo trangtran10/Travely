@@ -12,30 +12,15 @@ await mongoose.connect('mongodb+srv://harmanzhang60:HarmanInfo441Zhang@cluster0.
 
 console.log("successfully connected to mongodb!")
 
-const newPost = new mongoose.Schema({
-    username: String,
-    url: String,
-    description: String,
-    likes: [String],
-    created_date: Date
+const newItinerary = new mongoose.Schema({
+    destination: { type: String, required: true } ,
+    airline: { type: String, required: true } ,
+    created_date: { type: Date, deafault: Date.now },
+    Summary: { type: String,  default: true },
+    photo: { type: String, required: true}
 })
 
-models.Post = mongoose.model('Post', newPost)
-
-const newComment = new mongoose.Schema({
-    username: String,        
-    comment: String,
-    post: {type: mongoose.Schema.Types.ObjectId, ref: "post"}, // ObjectId referencing a Post
-    created_date: Date       
-});
-
-UserInfo
-
-const newUserInfo = new mongoose.Schema({
-    FavorateIceCream: String    
-});
-
-models.newUserInfo = mongoose.model('UserInfo', newUserInfo)
+models.Itinerary = mongoose.model('Itinerary', newItinerary)
 
 console.log("mongoose models created")
 
